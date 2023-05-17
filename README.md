@@ -55,3 +55,12 @@ The src folder includes all the code needed to reproduce results in the paper an
 For original dataset, see https://www.kaggle.com/c/stanford-covid-vaccine/data
 
 In addition to the secondary structure features given by Das Lab, I also generated additional secondary structure features at 2 temperatures with 6 biophysical packages (12x), for these features, see https://www.kaggle.com/shujun717/openvaccine-12x-dataset
+
+## How to run
+python pretrain.py --gpu_id -1 --kmer_aggregation --nmute 0 --epochs 200 --nlayers 5 --batch_size 96 --kmers 5 --lr_scale 0.1   --workers
+0 --dropout 0.1 --nclass 5 --ntoken 15 --nhead 32 --ninp 256 --nhid 1024 --warmup_steps 600 --fold 1 --weight_decay 0.1
+
+python train.py --gpu_id -1 --kmer_aggregation --nmute 0 --epochs 1 --nlayers 5  --batch_size 16 --kmers 5 --lr_scale 0.1  --workers 0 --d
+ropout 0.1 --nclass 5 --ntoken 15 --nhead 32 --ninp 256 --nhid 1024 --warmup_steps 600 --fold 1 --weight_decay 0.1 --nfolds 10 --error_alpha 0.5 --noise_filter 0.25
+
+
