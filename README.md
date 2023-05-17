@@ -8,11 +8,6 @@ Source code to reproduce results in the paper "RNAdegformer: Accurate Prediction
 </p>
 
 
-### RNA degradation prediction
-In this page you can predict RNA degradation at each nucleotide and visualize the attention weights of the RNAdegformer
-
-![RNA degradation](https://github.com/Shujun-He/RNAdegformer-Webapp/blob/main/files/rnapage.png)
-
 
 ## Requirements
 I included a file (environment.yml) to recreate the exact environment I used. Since I also use this environment for computer vision tasks, it includes some other packages as well. This should take around 10 minutes. After installing anaconda:
