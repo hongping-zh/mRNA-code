@@ -2,6 +2,9 @@
 
 
 Source code to reproduce results in the paper "RNAdegformer: Accurate Prediction of mRNA Degradation at Nucleotide Resolution with Deep Learning".
+<div align="center">
+  <h2> <a href= >[paper]</a >, <a href=https://academic.oup.com/bib/article/24/1/bbac581/6986359?login=false>[project hompage]</a ></h2>
+</div>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Shujun-He/RNAdegformer/main/graphics/RNAdegformer.png?token=GHSAT0AAAAAABRGHIRII6LFDFJ7KPWZWBEAYY6X33Q"/>
